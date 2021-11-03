@@ -2,6 +2,7 @@ package com.sgp.sem3.crudapisbjavamvn.controller;
 
 import com.sgp.sem3.crudapisbjavamvn.model.Semester;
 import com.sgp.sem3.crudapisbjavamvn.model.Student;
+import com.sgp.sem3.crudapisbjavamvn.model.Subject;
 import com.sgp.sem3.crudapisbjavamvn.service.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,22 +19,20 @@ public class StudentController {
     public StudentController(StudentService studentService) {
         this.studentService = studentService;
     }
-/** TESTing POST
+/** // TESTing POST
     @PostMapping
     public ResponseEntity addStudent(@RequestBody Student student){
-        ArrayList<Subject> AL = new ArrayList<>();
+        *//*ArrayList<Subject> AL = new ArrayList<>();
         AL.add(new Subject("MS001","MySub1",3.0,"CC",4));
         AL.add(new Subject("MS002","MySub2",3.5,"CC",4));
         AL.add(new Subject("MS003","MySub3",3.5,"BB",7));
         AL.add(new Subject("MS004","MySub4",5,"BC",6));
-        AL.add(new Subject("MS005","MySub5",2.0,"AB",9));
-        Student studentTest = new Student("20CS093","Test Kid",
-                new Semester(1,AL),
-                new Semester(2,AL));
+        AL.add(new Subject("MS005","MySub5",2.0,"AB",9));*//*
+        Student studentTest = new Student("20CS069","Akshay");
         studentService.addStudent(studentTest);
         return ResponseEntity.status(HttpStatus.CREATED).build();
-    }
-*/
+    }*/
+
     @PostMapping
     public ResponseEntity addStudent(@RequestBody Student student){
 
@@ -57,8 +56,8 @@ public class StudentController {
     }
 
     @DeleteMapping("/{sid}")
-    public ResponseEntity.BodyBuilder deleteStudent(@PathVariable String sid){
+    public ResponseEntity deleteStudent(@PathVariable String sid){
         studentService.deleteStudent(sid);
-        return (ResponseEntity.BodyBuilder) ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        return  ResponseEntity.status(HttpStatus.NO_CONTENT).build();
     }
 }

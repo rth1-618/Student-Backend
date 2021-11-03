@@ -1,13 +1,12 @@
 package com.sgp.sem3.crudapisbjavamvn.model;
 
-import java.util.HashMap;
-
 public class Subject {
     String subCode;
     String subName;
     double credit;
     String grade;
     int gradePoint;
+
 
     public String getSubCode() {
         return subCode;
@@ -49,8 +48,10 @@ public class Subject {
         this.gradePoint = gradePoint;
     }
 
-    public Subject() {
-    }
+   /* public Subject(String subCode, String subName) {
+        this.subCode = subCode;
+        this.subName = subName;
+    }*/
 
     public Subject(String subCode, String subName, double credit, String grade, int gradePoint) {
         this.subCode = subCode;
