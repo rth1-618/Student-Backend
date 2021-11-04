@@ -10,7 +10,7 @@ import java.util.List;
 
 /**
  * For Controlling and Mapping Requests to Service.
- * @uses StudentService to map methods.
+ * Uses StudentService to map methods.
  * @see StudentService
  * @author PARTH
  * @version v2 Changed DeleteMapping  return type to Response Entity

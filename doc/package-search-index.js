@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.sgp.sem3.crudapisbjavamvn"},{"l":"com.sgp.sem3.crudapisbjavamvn.controller"},{"l":"com.sgp.sem3.crudapisbjavamvn.model"},{"l":"com.sgp.sem3.crudapisbjavamvn.repository"},{"l":"com.sgp.sem3.crudapisbjavamvn.service"}];updateSearchResults();

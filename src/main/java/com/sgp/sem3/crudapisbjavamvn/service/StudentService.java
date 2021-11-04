@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * Provides and Implements methods for CRUD operations on StudentRepository
- * @uses StudentRepository to make perform CRUD operations on.
+ * Uses StudentRepository to make perform CRUD operations on.
  * @see StudentRepository
  * @author PARTH
  */
