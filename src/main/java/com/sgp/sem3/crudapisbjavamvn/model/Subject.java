@@ -1,5 +1,10 @@
 package com.sgp.sem3.crudapisbjavamvn.model;
 
+/**
+ * Represents a single Subject with elements for Code, Name, Credit achieved,
+ * Grade and Grade point.
+ * @author PARTH
+ */
 public class Subject {
     String subCode;
     String subName;
@@ -7,6 +12,13 @@ public class Subject {
     String grade;
     int gradePoint;
 
+    public Subject(String subCode, String subName, double credit, String grade, int gradePoint) {
+        this.subCode = subCode;
+        this.subName = subName;
+        this.credit = credit;
+        this.grade = grade;
+        this.gradePoint = gradePoint;
+    }
 
     public String getSubCode() {
         return subCode;
@@ -45,19 +57,6 @@ public class Subject {
     }
 
     public void setGradePoint(int gradePoint) {
-        this.gradePoint = gradePoint;
-    }
-
-   /* public Subject(String subCode, String subName) {
-        this.subCode = subCode;
-        this.subName = subName;
-    }*/
-
-    public Subject(String subCode, String subName, double credit, String grade, int gradePoint) {
-        this.subCode = subCode;
-        this.subName = subName;
-        this.credit = credit;
-        this.grade = grade;
         this.gradePoint = gradePoint;
     }
 }

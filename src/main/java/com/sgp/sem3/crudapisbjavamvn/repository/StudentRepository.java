@@ -6,6 +6,12 @@ import org.springframework.data.mongodb.repository.Query;
 
 import java.util.Optional;
 
+/**
+ * Student Repository inherits features from MongoRepository
+ * and provides a reference to access Database.
+ * {@inheritDoc}
+ * @author PARTH
+ */
 public interface StudentRepository extends MongoRepository<Student, String> {
     /**
      * This method does not exist in the MongoRepository framework class.
